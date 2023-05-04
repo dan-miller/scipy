@@ -488,6 +488,7 @@ class Build(Task):
         ret = subprocess.call(cmd, env=env, cwd=run_dir)
         if ret == 0:
             print("Meson build setup OK")
+            print("lmao")
         else:
             print("Meson build setup failed!")
             sys.exit(1)
